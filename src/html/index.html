@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Habib Anwash">
+    <meta name="description" content="A simple personal portfolio webpage">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="icon" href="/src/img/svg/Logo.svg">
+    <title>Personal portfolio</title>
+  </head>
+  <body class="static overflow-x-clip">
+    <header id="home" class="md:flex flex-col" style="min-height: calc(100vh - 128px)">
+      <div
+      class="static flex justify-between items-center h-20 px-6 text-white text-2xl font-extrabold tracking-wider
+      md:h-28 md:px-36"
+      >
+        <div class="flex justify-between items-center gap-[20px]">
+          <img style="height:30px" src="/src/img/png/Logo.png" alt="logo">
+          <h1>PORTFOLIO</h1>
+        </div>
+        <button id="sidebar-toggle" class="absolute right-4 rounded-lg border-2 border-white border-opacity-20 w-[45px] h-[35px]
+        md:right-36
+        min-[1200px]:hidden">
+          <img
+          style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%)"
+          src="/src/img/svg/LeftArrow.svg"
+          alt="left-arrow"
+          >
+        </button>
+        <nav id="navbar" class="hidden relative flex-row transition z-10 p-0 items-center gap-11 text-[rgba(255,255,255,0.5)] font-light
+        min-[1200px]:flex">
+          <a href="#home" class="selected">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Portfolio</a>
+          <a href="#socials">Contact</a>
+        </nav>
+      </div>
+      <div class="md:flex items-center flex-grow">
+        <main id="main-heading" class="flex flex-col gap-12 items-center w-min mx-auto mt-16 mb-7
+        md:flex-row md:gap-10 md:my-0 md:w-max">
+          <div class="flex flex-col gap-5 w-80
+          md:w-[50vw] md:gap-0">
+            <div>
+              <h5 id="name" class="opacity-0 -translate-x-1/4 transition duration-700 text-white text-sm font-semibold tracking-[0.25em]
+              md:leading-[1.5]">
+                Habib Anwash
+              </h5>
+              <h1 id="heading" class="text-[#0CFF8A] text-4xl text-jetbrainsmono-xb
+              md:text-5xl  md:leading-[1.5]"><span id="animate-heading">Front End </span>developer</h1>
+            </div>
+            <p id="description" class="opacity-0 translate-x-1/4 transition duration-700 delay-200 text-[#6A6A6A] text-xs indent-9
+            md:text-[16px] md:leading-[1.5]">
+              Hi, my name is Habib Anwash. I'm a self-taught developer and passionate about learning something new. I am excited to continue learning and growing as a developer and I am eager to take on new challenges.
+            </p>
+            <div class="flex flex-col gap-5
+            md:mt-10 md:flex-row md:gap-6">
+              <button onclick="document.querySelector('#socials').scrollIntoView()" class="w-32 h-10 bg-[#FF122E]">
+                Contact
+              </button>
+              <button onclick="document.querySelector('#projects').scrollIntoView()" class="w-44 h-10 bg-transparent outline outline-[#6A6A6A] outline-1">
+                View portfolio
+              </button>
+            </div>
+          </div>
+          <div style="overflow: hidden;">
+            <img
+            class="right-[-30px] w-96
+            md:static md:w-[33vw]"
+            src="/src/img/png/Vector.png"
+            alt="decoration">
+          </div>
+        </main>
+      </div>
+    </header>
+    <main class="bg-white overflow-x-hidden">
+      <!-- Separator -->
+      <div class="py-5
+      md:py-10">
+        <img class="mx-auto
+        md:h-12" src="/src/img/svg/Separator.svg" alt="separator">
+      </div>
+      <!-- Separator -->
+
+
+      <section id="about" class="page gap-7
+      md:flex-row md:justify-between md:mx-[15vw] md:gap-14">
+        <div class="title
+        md:hidden">
+          <h1 class="before:left-3 before:w-16">About Me</h1>
+        </div>
+        <div class="aspect-square w-28 rounded-full overflow-hidden ring ring-[#8D7AFF] ring-offset-4
+        md:w-64">
+          <img src="/src/img/me.jpg" alt="Profile_Photo">
+        </div>
+        <div class="flex flex-col gap-8 w-[65%] items-center
+        md:w-[680px] md:items-start">
+          <div class="title hidden
+          md:flex">
+            <h1 class="before:left-3 before:w-16
+            md:before:w-28">About Me</h1>
+          </div>
+          <p class="text-justify leading-5
+          md:text-xl">Hi, my name is Habib Anwash. I'm currently a student in one of the Islamic High School located in East Java, Indonesia (MAN 1 BANYUWANGI). As a self-learner, I got all of these knowledge by learning on YouTube, some online bootcamp like freeCodeCamp, and experimenting myself by building projects. But with all those, I am still excited to continue learning and growing as a developer and I am eager to take on new challenges. I have been working on my own projects and honing my skills with it.</p>
+          <button onclick="document.querySelector('#socials').scrollIntoView()" class="w-36 h-10 bg-[#FF122E]
+          md:w-56 md:h-14 md:text-2xl">Contact me</button>
+        </div>
+      </section>
+      
+
+      <!-- Separator -->
+      <div class="py-5
+      md:py-10">
+        <img class="mx-auto
+        md:h-12" src="/src/img/svg/Separator.svg" alt="separator">
+      </div>
+      <!-- Separator -->
+
+
+      <section id="skills" id="skills" class="page gap-7
+      md:gap-24 md:mx-[10vw]">
+        <div class="title">
+          <h5 class="tracking-widest">Skills</h5>
+          <h1 class="before:w-6 before:left-8 after:w-28 after:left-16">What i work for</h1>
+        </div>
+        <ul class="flex flex-wrap w-full justify-center gap-x-4 gap-y-16
+        md:w-auto">
+          <li class="opacity-0 -translate-x-1/2 transition duration-700 item">
+            <div>
+              <img src="/src/img/png/MongoDB_Logo.png" alt="MongoDB_Logo">
+            </div>
+            <div>
+              <h3>MongoDB</h3>
+              <p>Cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.</p>
+            </div>
+          </li>
+          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-100 item">
+            <div>
+              <img src="/src/img/png/Express_Logo.png" alt="Express_Logo">
+            </div>
+            <div>
+              <h3>Express JS</h3>
+              <p>Back end web application framework for building RESTful APIs with NodeJS, released as free and open-source software under the MIT License.</p>
+            </div>
+          </li>
+          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-200 item">
+            <div>
+              <img src="/src/img/png/React_Logo.png" alt="React_Logo">
+            </div>
+            <div>
+              <h3>React</h3>
+              <p>JavaScript library for building user interfaces. React has been designed from the start for gradual adoption, and you can use as little or as much React as you need.</p>
+            </div>
+          </li>
+          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-300 item">
+            <div>
+              <img src="/src/img/png/Node_Logo.png" alt="Node_Logo.png">
+            </div>
+            <div>
+              <h3>Node JS</h3>
+              <p>Back end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser.</p>
+            </div>
+          </li>
+          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-[400ms] item">
+            <div>
+              <img src="/src/img/png/HTML_Logo.png" alt="HTML_Logo.png">
+              <img src="/src/img/png/CSS_Logo.png" alt="CSS_Logo.png">
+              <img src="/src/img/png/JS_Logo.png" alt="JS_Logo.png">
+            </div>
+            <div>
+              <h3>Web Development</h3>
+              <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).</p>
+            </div>
+          </li>
+          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-500 item">
+            <div>
+              <img src="/src/img/png/Git_Logo.png" alt="Git_Logo.png">
+            </div>
+            <div>
+              <h3>Git Version Control</h3>
+              <p>Distributed version control system, tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.</p>
+            </div>
+          </li>
+          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-[600ms] item">
+            <div>
+              <img src="/src/img/png/MySQL_Logo.png" alt="MySQL_Logo.png">
+            </div>
+            <div>
+              <h3>MySQL</h3>
+              <p>MySQL is a widely used relational database management system (RDBMS). MySQL is free and open-source. MySQL is ideal for both small and large applications.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+      <!-- Separator -->
+      <div class="py-5
+      md:py-10">
+        <img class="mx-auto
+        md:h-12" src="/src/img/svg/Separator.svg" alt="separator">
+      </div>
+      <!-- Separator -->
+
+
+      <section id="projects" class="page gap-7
+      md:gap-24">
+        <div class="title">
+          <h5 class="tracking-widest">My projects</h5>
+          <h1 class="before:w-full">Portfolio</h1>
+        </div>
+        <ul>
+          <li class="opacity-0 -translate-x-1/2 transition duration-700 item border-l-[#0CFF8A]">
+            <h3>Todo-list app</h3>
+            <img
+            src="/src/img/project/TodoApp.jpg"
+            alt="preview"
+            class="aspect-video ring ring-offset-2 ring-[#8D7AFF] rounded">
+            <div class="md:flex md:flex-col md:gap-6 md:w-[46%]">
+              <h3 class="hidden
+              md:!block">Todo-list app</h3>
+              <div class="px-5 py-3 border-l-[#8D7AFF]">
+                <p class="text-justify
+                md:text-xl">Basic todo app for managing tasks. Build with vanilla html, css, and javascript as front-end. Using NodeJS, express and MongoDB as backend.</p>
+              </div>
+            </div>
+            <button class="rounded-full bg-[#0CFF8A] aspect-square w-[50px]">
+              <img class="w-6 mx-auto" src="/src/img/svg/RightArrow.svg" alt="right-arrow">
+            </button>
+          </li>
+          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-100 item border-l-[#0C8AFF]">
+            <h3>React movie app</h3>
+            <img
+            src="/src/img/project/ReactMovieApp.png"
+            alt="preview"
+            class="aspect-video ring ring-offset-2 ring-[#8D7AFF] rounded">
+            <div class="md:flex md:flex-col md:gap-6 md:w-[46%]">
+              <h3 class="hidden
+              md:!block">React movie app</h3>
+              <div class="px-5 py-3 border-l-[#8D7AFF]">
+                <p class="text-justify
+                md:text-xl">MERN stack application used for searching and collection movies. Build with react, ant-design, and a little bit bootstrap react ui library as front-end. And NodeJS, MongoDB as backend.</p>
+              </div>
+            </div>
+            <button class="rounded-full bg-[#0C8AFF] aspect-square w-[50px]">
+              <img class="w-6 mx-auto" src="/src/img/svg/RightArrow.svg" alt="right-arrow">
+            </button>
+          </li>
+        </ul>
+      </section>
+
+
+      <!-- Separator -->
+      <div class="py-5
+      md:py-10">
+        <img class="mx-auto
+        md:h-12" src="/src/img/svg/Separator.svg" alt="separator">
+      </div>
+      <!-- Separator -->
+
+
+      <section id="socials" class="page gap-7
+      md:gap-24">
+        <div class="title">
+          <h5 class="text-center tracking-widest">Contact me</h5>
+          <h1>My Social Media</h1>
+        </div>
+        <ul>
+          <li class="opacity-0 translate-x-1/2 transition duration-700 item border-l-[#333333] text-[#333333]">
+            <img class="aspect-square w-[40px]
+            min-[1200px]:w-24
+            md:w-10" src="/src/img/png/GitHub_Logo.png" alt="GitHub_Logo">
+            <p class="font-extrabold text-xs
+            min-[1200px]:text-4xl
+            md:text-2xl">GITHUB :</p>
+            <p class="text-jetbrainsmono-xb tracking-widest text-xs
+            min-[1200px]:text-4xl
+            md:text-2xl">ans54bit</p>
+          </li>
+          <li class="opacity-0 translate-x-1/2 transition duration-700 delay-100 item border-l-[#24A1DD] text-[#24A1DD]">
+            <img class="aspect-square w-[40px]
+            min-[1200px]:w-24
+            md:w-10" src="/src/img/png/Telegram_Logo.png" alt="Telegram_Logo">
+            <p class="font-extrabold text-xs
+            min-[1200px]:text-4xl
+            md:text-2xl">TELEGRAM :</p>
+            <p class="text-jetbrainsmono-xb tracking-widest text-xs
+            min-[1200px]:text-4xl
+            md:text-2xl">Habib Anwash</p>
+          </li>
+          <li class="opacity-0 translate-x-1/2 transition duration-700 delay-200 item border-l-[#5865F2] text-[#5865F2]">
+            <img class="aspect-square w-[40px]
+            min-[1200px]:w-24
+            md:w-10" src="/src/img/png/Discord_Logo.png" alt="Discord_Logo">
+            <p class="font-extrabold text-xs
+            min-[1200px]:text-4xl
+            md:text-2xl">DISCORD :</p>
+            <p class="text-jetbrainsmono-xb tracking-widest text-xs
+            min-[1200px]:text-4xl
+            md:text-2xl">HabibAnwash1447@7305</p>
+          </li>
+          <li class="opacity-0 translate-x-1/2 transition duration-700 delay-300 item border-l-[#CC426A] text-[#CC426A]">
+            <img class="aspect-square w-[40px]
+            min-[1200px]:w-24
+            md:w-10" src="/src/img/png/Instagram_Logo.png" alt="Instagram_Logo">
+            <p class="font-extrabold text-xs
+            min-[1200px]:text-4xl
+            md:text-2xl">INSTAGRAM :</p>
+            <p class="text-jetbrainsmono-xb tracking-widest text-xs
+            min-[1200px]:text-4xl
+            md:text-2xl">@ans54bit</p>
+          </li>
+          <li class="opacity-0 translate-x-1/2 transition duration-700 delay-[400ms] item border-l-[#3FE35C] text-[#3FE35C]">
+            <img class="aspect-square w-[40px]
+            min-[1200px]:w-24
+            md:w-10" src="/src/img/png/Whatsapp_Logo.png" alt="Whatsapp_Logo">
+            <p class="font-extrabold text-xs
+            min-[1200px]:text-4xl
+            md:text-2xl">WHATSAPP :</p>
+            <p class="text-jetbrainsmono-xb tracking-widest text-xs
+            min-[1200px]:text-4xl
+            md:text-2xl">+62 812-1767-5797</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="bg-[#242A33] flex flex-col items-center py-4 gap-2
+    md:h-40 md:py-11 md:gap-3">
+      <p class="text-white text-xs tracking-widest
+      md:text-2xl">Copyright @ Jan 2023 - <span class="text-yellow-200 font-black ">Habib Anwash</span></p>
+      <p class="text-jetbrainsmono-xb tracking-widest
+      text-white w-52 text-center text-xs
+      md:text-xl md:w-full">Build with basic html and tailwind classes</p>
+    </footer>
+    <div
+    id="background"
+    style="
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    height: 3000px;
+    width: 100%;"
+    >
+      <div
+      style="
+      height: 100%;
+      width: 100%;
+      background: rgba(12,5,30,.95);"></div>
+        <img
+        class="origin-top-left -rotate-12 scale-[11] translate-x-1/2 translate-y-1/2 absolute z-[-1] top-[150px] right-[400px]
+        md:top-0 md:right-[800px] md:scale-[17]"
+        src="/src/img/svg/Decoration.svg"
+        alt="Decoration">
+    </div>
+    <div id="backdrop" class="hidden absolute overflow-hidden top-0 left-0 w-full h-[100vh] bg-[rgba(0,0,0,.3)]">
+      <nav tabindex="1" id="sidebar" class="absolute transition translate-x-full z-10 right-0 top-0 w-80 border-l-4 border-l-[rgba(47,40,67,.5)] bg-[rgba(12,5,30,.6)] backdrop-blur-lg h-[500vh] backdrop-brightness-50">
+        <ul class="flex flex-col items-stretch p-9 gap-11 text-[rgba(255,255,255,0.5)] font-light">
+          <li><a href="#home" class="selected">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+          <li><a href="#socials">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+  <script defer src="/src/script/headingAnimation.js"></script>
+  <script defer src="/src/script/render.js"></script>
+  <script defer src="/src/script/navigation.js"></script>
+</html>
