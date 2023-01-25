@@ -1,0 +1,209 @@
+
+    <header>
+      <div
+      class="
+      flex
+      justify-between
+      items-center
+      bg-[rgba(0,0,0,.1)]
+      h-20
+      px-6
+      text-white
+      text-2xl
+      font-extrabold
+      tracking-wider"
+      >
+        <div
+        class="
+        flex
+        justify-between
+        items-center
+        gap-[20px]"
+        >
+          <img src="/src/img/svg/Logo.svg" alt="logo">
+          <h1>PORTFOLIO</h1>
+        </div>
+        <button
+        class="
+        relative
+        rounded
+        border-2
+        border-white
+        border-opacity-20
+        w-[45px]
+        h-[35px]"
+        >
+          <img
+          style="
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%)"
+          src="/src/img/svg/LeftArrow.svg"
+          alt="left-arrow"
+          >
+        </button>
+      </div>
+      <div>
+        <h5
+        class="
+        text-white
+        text-sm">
+          Habib Anwash
+        </h5>
+        <h1>Front End developer</h1>
+        <p>Hi, my name is Habib Anwash. I'm a self-taught developer and passionate about learning programming and related technology. I am excited to continue learning and growing as a developer and I am eager to take on new challenges.</p>
+        <div>
+          <button>Contact</button>
+          <button>View portfolio</button>
+        </div>
+      </div>
+      <div>
+        <img src="/src/img/png/Vector.png" alt="decoration">
+      </div>
+    </header>
+    <div><!-- Separator --></div>
+    <section>
+      <h1>About Me</h1>
+      <div>
+        <h1>About Me</h1>
+        <p>Hi, my name is Habib Anwash. I'm currently a student in one of the Islamic High School located in East Java, Indonesia (MAN 1 BANYUWANGI). As a self-learner, I got all of these knowledge by learning on YouTube, some online bootcamp like freeCodeCamp, and experimenting myself by building projects. But with all those, I am still excited to continue learning and growing as a developer and I am eager to take on new challenges. I have been working on my own projects and honing my skills with it.</p>
+        <button>Contact me</button>
+      </div>
+    </section>
+    <div><!-- Separator --></div>
+    <section>
+      <div>
+        <h5>Skills</h5>
+        <h1>What i work for</h1>
+      </div>
+      <ul>
+        <li>
+          <div>
+            <img src="/src/img/png/MongoDB_Logo.png" alt="MongoDB_Logo">
+          </div>
+          <div>
+            <h3>MongoDB</h3>
+            <p>Cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/src/img/png/Express_Logo.png" alt="Express_Logo">
+          </div>
+          <div>
+            <h3>Express JS</h3>
+            <p>Back end web application framework for building RESTful APIs with NodeJS, released as free and open-source software under the MIT License.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/src/img/png/React_Logo.png" alt="React_Logo">
+          </div>
+          <div>
+            <h3>React</h3>
+            <p>JavaScript library for building user interfaces. React has been designed from the start for gradual adoption, and you can use as little or as much React as you need.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/src/img/png/Node_Logo.png" alt="Node_Logo.png">
+          </div>
+          <div>
+            <h3>Node JS</h3>
+            <p>Back end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/src/img/png/HTML_Logo.png" alt="HTML_Logo.png">
+            <img src="/src/img/png/CSS_Logo.png" alt="CSS_Logo.png">
+            <img src="/src/img/png/JS_Logo.png" alt="JS_Logo.png">
+          </div>
+          <div>
+            <h3>Web Development</h3>
+            <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/src/img/png/Git_Logo.png" alt="Git_Logo.png">
+          </div>
+          <div>
+            <h3>Git Version Control</h3>
+            <p>Distributed version control system, tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.</p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="/src/img/png/MySQL_Logo.png" alt="MySQL_Logo.png">
+          </div>
+          <div>
+            <h3>MySQL</h3>
+            <p>MySQL is a widely used relational database management system (RDBMS). MySQL is free and open-source. MySQL is ideal for both small and large applications.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <div><!-- Separator --></div>
+    <section>
+      <div>
+        <h5>My projects</h5>
+        <h1>Portfolio</h1>
+      </div>
+      <ul>
+        <li>
+          <h3>Todo-list app</h3>
+          <img src="" alt="preview">
+          <div>
+            <h3>Todo-list app</h3>
+            <p>Basic todo app for managing tasks. Build with vanilla html, css, and javascript as front-end. Using NodeJS, express and MongoDB as backend.</p>
+          </div>
+          <button></button>
+        </li>
+        <li>
+          <h3>React movie app</h3>
+          <img src="" alt="preview">
+          <div>
+            <h3>React movie app</h3>
+            <p>MERN stack application used for searching and collection movies. Build with react, ant-design, and a little bit bootstrap react ui library as front-end. And NodeJS, MongoDB as backend.</p>
+          </div>
+          <button></button>
+        </li>
+      </ul>
+    </section>
+    <div><!-- Separator --></div>
+    <section>
+      <div>
+        <h5>Contact me</h5>
+        <h1>My Social Media</h1>
+      </div>
+      <ul>
+        <li>
+          <img src="/src/img/png/GitHub_Logo" alt="GitHub_Logo">
+          <p>GITHUB :</p>
+          <p>ans54bit</p>
+        </li>
+        <li>
+          <img src="/src/img/png/Telegram_Logo" alt="Telegram_Logo">
+          <p>TELEGRAM :</p>
+          <p>Habib Anwash</p>
+        </li>
+        <li>
+          <img src="/src/img/png/Discord_Logo" alt="Discord_Logo">
+          <p>DISCORD :</p>
+          <p>HabibAnwash1447@7305</p>
+        </li>
+        <li>
+          <img src="/src/img/png/Instagram_Logo" alt="Instagram_Logo">
+          <p>INSTAGRAM :</p>
+          <p>@ans54bit</p>
+        </li>
+        <li>
+          <img src="/src/img/png/Whatsapp_Logo" alt="Whatsapp_Logo">
+          <p>WHATSAPP :</p>
+          <p>+62 812-1767-5797</p>
+        </li>
+      </ul>
+    </section>
+    <footer></footer>
