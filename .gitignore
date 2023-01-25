@@ -1,2 +1,10 @@
 /node_modules
-text.txt
+/.upm
+/.config
+/.git
+.gitignore
+package.json
+package-lock.json
+.replit
+replit.nix
+index.js
