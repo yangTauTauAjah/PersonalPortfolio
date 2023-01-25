@@ -110,7 +110,7 @@ executeOnVisible(projectsList,
 
 
 const socialsList = document.querySelector("#socials ul")
-const socialsItem = document.querySelectorAll("#socials li")
+const socialsItem = document.querySelectorAll("#socials .item")
 
 executeOnVisible(socialsList,
   () => {
