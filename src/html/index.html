@@ -11,7 +11,7 @@
     <title>Personal portfolio</title>
   </head>
   <body class="static">
-    <header id="home" class="md:flex flex-col" style="min-height: calc(100vh - 128px)">
+    <header id="home" class="overflow-x-hidden md:flex flex-col" style="min-height: calc(100vh - 128px)">
       <div
       class="static flex justify-between items-center h-20 px-6 text-white text-2xl font-extrabold tracking-wider
       md:h-28 md:px-36"
@@ -45,7 +45,7 @@
       <div class="md:flex items-center flex-grow">
         <main class="flex flex-col gap-12 items-center w-min mx-auto mt-16 mb-7
         md:flex-row md:gap-10 md:my-0 md:w-max">
-          <div id="main-heading" class="overflow-x-hidden flex flex-col gap-5 w-80
+          <div id="main-heading" class="flex flex-col gap-5 w-80
           md:w-[50vw] md:gap-0">
             <div>
               <h5 id="name" class="opacity-0 -translate-x-1/4 transition duration-700 text-white text-sm font-semibold tracking-[0.25em]
@@ -230,9 +230,9 @@
                 md:text-xl">Basic todo app for managing tasks. Build with vanilla html, css, and javascript as front-end. Using NodeJS, express and MongoDB as backend.</p>
               </div>
             </div>
-            <button class="rounded-full bg-[#0CFF8A] aspect-square w-[50px]">
+            <a target="_blank" rel="noopener noreferrer" href="https://todoapp.tugasonly.repl.co/" class="flex items-center rounded-full bg-[#0CFF8A] aspect-square w-[50px]">
               <img class="w-6 mx-auto" src="/src/img/svg/RightArrow.svg" alt="right-arrow">
-            </button>
+            </a>
           </li>
           <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-100 item border-l-[#0C8AFF]">
             <h3>React movie app</h3>
@@ -248,9 +248,9 @@
                 md:text-xl">MERN stack application used for searching and collection movies. Build with react, ant-design, and a little bit bootstrap react ui library as front-end. And NodeJS, MongoDB as backend.</p>
               </div>
             </div>
-            <button class="rounded-full bg-[#0C8AFF] aspect-square w-[50px]">
+            <a class="flex items-center rounded-full bg-[#0C8AFF] aspect-square w-[50px]">
               <img class="w-6 mx-auto" src="/src/img/svg/RightArrow.svg" alt="right-arrow">
-            </button>
+            </a>
           </li>
         </ul>
       </section>
