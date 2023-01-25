@@ -1,44 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="overflow: hidden;" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
   <title>Document</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    .parent {
-      /* overflow: hidden; */
-    }
-
-    .container {
-      aspect-ratio: 1;
-      width: 500px;
-      background: cyan;
-    }
-
-    .child {
-      position: absolute;
-      aspect-ratio: 1;
-      width: 100px;
-      z-index: 10;
-    }
-  </style>
 </head>
-<body>
-  <div class="parent">
-    <div style="z-index: 0" class="container">
-      <div style="z-index: 100; background-color: beige; aspect-ratio: 1; width: 100px;"></div>
-      <div></div>
-    </div>
-  </div>
-
-  <div>
-    <div  style="z-index: 1; top: 0; position: absolute; aspect-ratio: 1; width: 500px; background: yellow;">
+<body class="w-[100vw]">
+  <div class="
+  w-full
+  h-52
+  bg-blue-600
+  ">
+    <div class="
+    relative
+    w-full
+    h-full
+    bg-orange-500
+    overflow-x-visible">
+      <div class="
+      absolute
+      -bottom-10
+      translate-x-full
+      aspect-square
+      w-24
+      bg-red-500"></div>
     </div>
   </div>
 </body>
