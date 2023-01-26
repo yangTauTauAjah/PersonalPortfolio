@@ -37,6 +37,9 @@ function showSideBar(bool) {
     BackdropElement.classList.remove('hidden')
     setTimeout(() => {
       SidebarElement.classList.add('show')
+      setTimeout(() => {
+        SidebarElement.focus()
+      }, 100)
     }, 100)
   } else {
     document.documentElement.style.setProperty('overflow-y', 'initial')
