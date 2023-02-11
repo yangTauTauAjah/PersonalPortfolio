@@ -9,12 +9,12 @@
   
   @font-face {
     font-family: 'JetBrainsMono-Bold';
-    src: url('/src/font/JetBrainsMono/JetBrainsMono-Bold.ttf');
+    src: url('https://raw.githubusercontent.com/yangTauTauAjah/PersonalPortfolio/replit/src/font/JetBrainsMono/JetBrainsMono-Bold.ttf');
   }
   
   @font-face {
     font-family: 'JetBrainsMono-ExtraBold';
-    src: url('/src/font/JetBrainsMono/JetBrainsMono-ExtraBold.ttf');
+    src: url('https://raw.githubusercontent.com/yangTauTauAjah/PersonalPortfolio/replit/src/font/JetBrainsMono/JetBrainsMono-ExtraBold.ttf');
   }
   
   * {
@@ -110,14 +110,14 @@
 
 @layer components {
 
-  #projects ul {
+  #testimonials ul {
     display: flex;
     flex-direction: column;
     gap: 30px;
     width: 63%;
   }
   
-  #projects .item {
+  #testimonials .item {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,24 +128,24 @@
     min-height: 428px;
     border-radius: 10px;
     border-left-style: solid;
-    border-left-width: 5px;
+    border-left-width: 10px;
   }
   
-  #projects .item h3 {
+  #testimonials .item h3 {
     color: rgba(0,0,0,.8);
     font-size: 24px;
     font-weight: 800;
   }
   
-  #projects .item div div {
+  #testimonials .item div div {
     font-size: 12px;
     background: rgba(0,0,0,.05);
     border-radius: 10px;
     border-left-style: solid;
-    border-left-width: 5px;
+    border-left-width: 10px;
   }
   
-  #projects .item img[alt=preview] {
+  #testimonials .item img[alt=preview] {
     color: rgba(0,0,0,.8);
     font-size: 24px;
     font-weight: 800;
@@ -153,26 +153,26 @@
   }
 
   @media (min-width: 768px) {
-    #projects ul {
+    #testimonials ul {
       gap: 45px;
       width: 79%;
     }
 
-    #projects .item {
+    #testimonials .item {
       flex-direction: row;
       justify-content: space-between;
-      gap: unset;
+      gap: 54px;
       width: auto;
       min-height: max-content;
-      padding: 16px 30px;
+      padding: 41px 54px;
     }
   
-    #projects .item h3 {
+    #testimonials .item h3 {
       font-size: 32px;
       display: none
     }
   
-    #projects .item img[alt=preview] {
+    #testimonials .item img[alt=preview] {
       width: 33%;
     }
   }
@@ -212,6 +212,19 @@
     text-align: justify;
     font-size: 13px;
     line-height: 1;
+  }
+
+}
+
+
+
+@layer components {
+
+  #experts .item {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0,0,0,.05);
+    width: 24.3vw;
   }
 
 }
@@ -291,9 +304,9 @@
     font-family: 'JetBrainsMono-ExtraBold';
   }
 
-  nav.show { transform: translateX(0) }
+  div.show { transform: translateX(0) }
 
-  nav li {
+  div li {
 
     display: flex;
     justify-content: end;
@@ -306,13 +319,13 @@
 
   }
 
-  nav li:has(a.selected) {
+  div li:has(a.selected) {
     border-right: #8D7AFF 5px solid;
   }
 
   @media (min-width: 1200px) {
 
-    nav a {
+    div a {
       display: initial;
       padding: 0;
       height: initial;
@@ -321,7 +334,7 @@
       border-radius: 0;
     }
 
-    nav a:before {
+    div a:before {
       content: ' ';
       position: absolute;
       background: #8D7AFF;
@@ -332,15 +345,15 @@
       transition: all 100ms ease-in;
     }
 
-    nav a:hover:before  {
+    div a:hover:before  {
       transform: scaleX(1);
     }
 
-    nav a.selected:before  {
+    div a.selected:before  {
       transform: scaleX(1);
     }
 
-    nav li:has(a.selected) {
+    div li:has(a.selected) {
       border-right: none;
     }
     

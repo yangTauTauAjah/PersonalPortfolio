@@ -13,7 +13,7 @@ const Page = [
   document.getElementById('home'),
   document.getElementById('about'),
   document.getElementById('skills'),
-  document.getElementById('projects'),
+  document.getElementById('testimonials'),
   document.getElementById('socials')
 ]
 /* <-----------------------------------------------------------> */
@@ -60,37 +60,20 @@ SidebarToggle.addEventListener('click', () => showSideBar(true))
 
 document.onscroll = () => {
 
-  if (Page[0].getBoundingClientRect().y === 0) {
+  const i = Page.findIndex(e => e.getBoundingClientRect().y === 0)
+
+  if (i !== -1) {
+    console.log('test')
     clearClass()
-    NavbarLink[0].classList.add('selected')
-    SidebarLink[0].classList.add('selected')
-  }
-  else if (Page[1].getBoundingClientRect().y === 0) {
-    clearClass()
-    NavbarLink[1].classList.add('selected')
-    SidebarLink[1].classList.add('selected')
-  }
-  else if (Page[2].getBoundingClientRect().y === 0) {
-    clearClass()
-    NavbarLink[2].classList.add('selected')
-    SidebarLink[2].classList.add('selected')
-  }
-  else if (Page[3].getBoundingClientRect().y === 0) {
-    clearClass()
-    NavbarLink[3].classList.add('selected')
-    SidebarLink[3].classList.add('selected')
-  }
-  else if (Page[4].getBoundingClientRect().y === 0) {
-    clearClass()
-    NavbarLink[4].classList.add('selected')
-    SidebarLink[4].classList.add('selected')
+    NavbarLink[i].classList.add('selected')
+    SidebarLink[i].classList.add('selected')
   }
   
 
 }
 
 
-console.log(Page)
+
 
 document.querySelectorAll('.contact-btn').forEach(e => {
   e.onclick = () => {

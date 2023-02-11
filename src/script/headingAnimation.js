@@ -1,6 +1,6 @@
 
-const TEXT1 = 'Front End '
-const TEXT2 = 'Back End '
+const TEXT1 = 'new '
+const TEXT2 = 'better '
 let current = TEXT1
 let text = document.querySelector('#animate-heading')
 

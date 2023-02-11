@@ -18,7 +18,7 @@
       >
         <div class="flex justify-between items-center gap-[20px]">
           <img style="height:30px" src="/src/img/png/Logo.png" alt="logo">
-          <h1>PORTFOLIO</h1>
+          <h1>AZERTY</h1>
         </div>
         <button id="sidebar-toggle" class="absolute right-4 rounded-lg border-2 border-white border-opacity-20 w-[45px] h-[35px]
         md:right-36
@@ -33,14 +33,16 @@
           alt="left-arrow"
           >
         </button>
-        <nav id="navbar" class="hidden relative flex-row transition z-10 p-0 items-center gap-11 text-[rgba(255,255,255,0.5)] font-light
+        <nav id="navbar" class="hidden relative flex-row transition z-10 p-0 items-center gap-11 text-[#ffffff85] font-light
         min-[1200px]:flex">
           <a href="#home" class="selected">Home</a>
           <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Portfolio</a>
+          <a href="#experts">Experts</a>
           <a href="#socials">Contact</a>
         </nav>
+        <button onclick="document.getElementById('join-us').scrollIntoView()" class="text-2xl text-center bg-[#3D4DDD] h-14 w-44 tracking-normal">
+          Get started
+        </button>
       </div>
       <div class="md:flex items-center flex-grow">
         <main class="flex flex-col gap-12 items-center w-min mx-auto mt-16 mb-7
@@ -48,24 +50,26 @@
           <div id="main-heading" class="flex flex-col gap-5 w-80
           md:w-[50vw] md:gap-0">
             <div>
-              <h5 id="name" class="opacity-0 -translate-x-1/4 transition duration-700 text-white text-sm font-semibold tracking-[0.25em]
-              md:leading-[1.5]">
-                Habib Anwash
+              <h5 id="fullname" class="opacity-0 -translate-x-1/4 transition duration-700 text-white text-sm font-semibold tracking-[0.25em]
+              md:leading-[1.5] md:text-2xl">
+                AZERTY <span class="text-[#3D4DDD]">ACADEMY</span>
               </h5>
               <h1 id="heading" class="text-[#0CFF8A] text-4xl text-jetbrainsmono-xb
-              md:text-5xl  md:leading-[1.5]"><span id="animate-heading">Front End </span>developer</h1>
+              md:text-5xl  md:leading-[1.5]">A <span id="animate-heading">new </span>way to learn programming</h1>
             </div>
             <p id="description" class="opacity-0 translate-x-1/4 transition duration-700 delay-200 text-[#6A6A6A] text-xs indent-9
             md:text-[16px] md:leading-[1.5]">
-              Hi, my name is Habib Anwash. I'm a self-taught developer and passionate about learning something new. I am excited to continue learning and growing as a developer and I am eager to take on new challenges.
+              AZERTY ACADEMY is the premier online platform for learning programming. With expert instructors and a comprehensive curriculum, we provide the skills and knowledge you need to succeed in tech. Start your journey today and unleash your potential.
             </p>
             <div class="flex flex-col gap-5
-            md:mt-10 md:flex-row md:gap-6">
-              <button onclick="document.querySelector('#socials').scrollIntoView()" class="w-32 h-10 bg-[#FF122E]">
+            md:mt-10 md:flex-row md:gap-6 md:text-2xl">
+              <button onclick="document.querySelector('#socials').scrollIntoView()" class="w-32 h-10 bg-[#FF122E]
+              md:w-48 md:h-14">
                 Contact
               </button>
-              <button onclick="document.querySelector('#projects').scrollIntoView()" class="w-44 h-10 bg-transparent outline outline-[#6A6A6A] outline-1">
-                View portfolio
+              <button onclick="document.querySelector('#testimonials').scrollIntoView()" class="w-44 h-10 bg-transparent outline outline-[#6A6A6A] outline-1
+              md:w-64 md:h-14">
+                Testimonials
               </button>
             </div>
           </div>
@@ -90,26 +94,26 @@
 
 
       <section id="about" class="page gap-7
-      md:flex-row md:justify-between md:mx-[15vw] md:gap-14">
+      md:flex-row md:justify-between md:mx-40 md:gap-14">
         <div class="title
         md:hidden">
-          <h1 class="before:left-3 before:w-16">About Me</h1>
+          <h1 class="before:left-3 before:w-16">About Us</h1>
         </div>
-        <div class="aspect-square w-28 rounded-full overflow-hidden ring ring-[#8D7AFF] ring-offset-4
-        md:w-64">
-          <img src="/src/img/me.jpg" alt="Profile_Photo">
+        <div class="">
+          <img class="aspect-[424/370] w-28 drop-shadow-[5px_5px_20px_rgba(0,0,0,0.4)]
+          md:w-[424px]" src="/src/img/jpg/pexels-pixabay-269077.jpg" alt="Profile_Photo">
         </div>
         <div class="flex flex-col gap-8 w-[65%] items-center
         md:w-[680px] md:items-start">
           <div class="title hidden
           md:flex">
             <h1 class="before:left-3 before:w-16
-            md:before:w-28">About Me</h1>
+            md:before:w-28 md:tracking-widest">About Us</h1>
           </div>
-          <p class="text-justify leading-5
-          md:text-xl">Hi, my name is Habib Anwash. I'm currently a student in one of the Islamic High School located in East Java, Indonesia (MAN 1 BANYUWANGI). As a self-learner, I got all of these knowledge by learning on YouTube, some online bootcamp like freeCodeCamp, and experimenting myself by building projects. But with all those, I am still excited to continue learning and growing as a developer and I am eager to take on new challenges. I have been working on my own projects and honing my skills with it.</p>
+          <p class="indent-20 text-justify leading-5
+          md:text-xl">AZERTY ACADEMY platform is a comprehensive online learning platform that offers courses in a variety of programming languages and technologies. The platform is designed for individuals of all skill levels, from beginners looking to start a career in tech to experienced developers looking to expand their knowledge. The courses on the platform are taught by industry experts who provide in-depth, practical instruction on the latest programming concepts and best practices.</p>
           <button onclick="document.querySelector('#socials').scrollIntoView()" class="w-36 h-10 bg-[#FF122E]
-          md:w-56 md:h-14 md:text-2xl">Contact me</button>
+          md:w-40 md:h-14 md:text-2xl">Join us</button>
         </div>
       </section>
       
@@ -127,7 +131,7 @@
       md:gap-24 md:mx-[10vw]">
         <div class="title">
           <h5 class="tracking-widest">Skills</h5>
-          <h1 class="before:w-6 before:left-8 after:w-28 after:left-16">What i work for</h1>
+          <h1 class="before:w-6 before:left-8 after:w-28 after:left-16">Skills you’ll get</h1>
         </div>
         <ul class="flex flex-wrap w-full justify-center gap-x-4 gap-y-16
         md:w-auto">
@@ -209,48 +213,115 @@
       <!-- Separator -->
 
 
-      <section id="projects" class="page gap-7
+      <section id="testimonials" class="page gap-7
       md:gap-24">
         <div class="title">
-          <h5 class="tracking-widest">My projects</h5>
-          <h1 class="before:w-full">Portfolio</h1>
+          <h5 class="tracking-widest">Testimonials</h5>
+          <h1 class="before:-translate-x-1/2 before:left-1/2 before:w-full
+          before:md:w-80">What people say about us</h1>
         </div>
         <ul>
-          <li class="opacity-0 -translate-x-1/2 transition duration-700 item border-l-[#0CFF8A]">
-            <h3>Todo-list app</h3>
+          <li class="item opacity-0 -translate-x-1/2 transition duration-700 border-l-[#0CFF8A]">
+            <h3>John Doe</h3>
             <img
-            src="/src/img/project/TodoApp.jpg"
-            alt="preview"
-            class="aspect-video ring ring-offset-2 ring-[#8D7AFF] rounded">
-            <div class="md:flex md:flex-col md:gap-6 md:w-[46%]">
+            src="/src/img/jpg/pexels-italo-melo-2379005.jpg"
+            alt="testimonial-1"
+            class="aspect-square h-52 ring-4 ring-offset-2 ring-[#8D7AFF] rounded-full
+            md:gap-14">
+            <div class="md:flex md:flex-col">
               <h3 class="hidden
-              md:!block">Todo-list app</h3>
+              md:!block">John Doe</h3>
               <div class="px-5 py-3 border-l-[#8D7AFF]">
                 <p class="text-justify
-                md:text-xl">Basic todo app for managing tasks. Build with vanilla html, css, and javascript as front-end. Using NodeJS, express and MongoDB as backend.</p>
+                md:text-xl">I have been a self-taught programmer for years but I still found this programming course platform incredibly helpful. The lessons were concise, easy to understand and I appreciated the hands-on projects that allowed me to apply what I learned. I would definitely recommend this platform to anyone looking to improve their programming skills.</p>
               </div>
             </div>
-            <a target="_blank" rel="noopener noreferrer" href="https://todoapp.tugasonly.repl.co/" class="flex items-center rounded-full bg-[#0CFF8A] aspect-square w-[50px]">
-              <img class="w-6 mx-auto" src="/src/img/svg/RightArrow.svg" alt="right-arrow">
-            </a>
           </li>
-          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-100 item border-l-[#0C8AFF]">
-            <h3>React movie app</h3>
+          <li class="item opacity-0 -translate-x-1/2 transition duration-700 delay-100 border-l-[#0C8AFF]">
+            <h3>Michael Johnson</h3>
             <img
-            src="/src/img/project/ReactMovieApp.png"
-            alt="preview"
-            class="aspect-video ring ring-offset-2 ring-[#8D7AFF] rounded">
-            <div class="md:flex md:flex-col md:gap-6 md:w-[46%]">
+            src="/src/img/jpg/pexels-pixabay-220453.jpg"
+            alt="testimonial-2"
+            class="aspect-square h-52 ring-4 ring-offset-2 ring-[#8D7AFF] rounded-full">
+            <div class="md:flex md:flex-col">
               <h3 class="hidden
-              md:!block">React movie app</h3>
+              md:!block">Michael Johnson</h3>
               <div class="px-5 py-3 border-l-[#8D7AFF]">
                 <p class="text-justify
-                md:text-xl">MERN stack application used for searching and collection movies. Build with react, ant-design, and a little bit bootstrap react ui library as front-end. And NodeJS, MongoDB as backend.</p>
+                md:text-xl">As a beginner, I was intimidated by the thought of learning to program. But the team at this programming course platform made the process so enjoyable. The support from the instructors was fantastic and I felt confident in my abilities after completing the course</p>
               </div>
             </div>
-            <a target="_blank" rel="noopener noreferrer" href="https://reactmovieapp.tugasonly.repl.co/" class="flex items-center rounded-full bg-[#0C8AFF] aspect-square w-[50px]">
-              <img class="w-6 mx-auto" src="/src/img/svg/RightArrow.svg" alt="right-arrow">
-            </a>
+          </li>
+          <li class="item opacity-0 -translate-x-1/2 transition duration-700 delay-200 border-l-[#FF122E]">
+            <h3>David Brown</h3>
+            <img
+            src="/src/img/jpg/pexels-nitin-khajotia-1516680.jpg"
+            alt="testimonial-2"
+            class="aspect-square h-52 ring-4 ring-offset-2 ring-[#8D7AFF] rounded-full">
+            <div class="md:flex md:flex-col">
+              <h3 class="hidden
+              md:!block">David Brown</h3>
+              <div class="px-5 py-3 border-l-[#8D7AFF]">
+                <p class="text-justify
+                md:text-xl">The platform's interactive learning environment and personalized feedback system made it easy for me to understand complex programming concepts. I highly recommend this platform to anyone looking to level up their programming skills.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+      <!-- Separator -->
+      <div class="py-5
+      md:py-10">
+        <img class="mx-auto
+        md:h-12" src="/src/img/svg/Separator.svg" alt="separator">
+      </div>
+      <!-- Separator -->
+
+
+      <section id="experts" class="page gap-7 mx-[8.54vw]
+      md:gap-24">
+        <div class="title">
+          <h5 class="tracking-widest">instructors</h5>
+          <h1 class="before:-translate-x-1/2 before:left-1/2 before:w-full
+          before:md:w-80">Our Experts</h1>
+        </div>
+        <ul class="pointer-events-none flex flex-wrap gap-x-[3.7vw] gap-y-[7.3vh] justify-start items-stretch">
+          <li class="item opacity-0 translate-y-1/2 transition duration-700 rounded-lg shadow-2xl">
+            <img class="rounded-t-lg" src="/src/img/jpg/pexels-andrea-piacquadio-3785104.jpg" alt="experts-1">
+            <div class="flex flex-col justify-between p-[1.81vw] gap-3">
+              <h2 class="font-bold text-[2vw] text-gray-700">James Mitchell</h2>
+              <p class="font-light text-[1.7vw]">Senior Software Engineer</p>
+            </div>
+          </li>
+          <li class="item opacity-0 translate-y-1/2 transition duration-700 delay-100 rounded-lg shadow-2xl">
+            <img class="rounded-t-lg" src="/src/img/jpg/pexels-andrea-piacquadio-3837279.jpg" alt="experts-1">
+            <div class="flex flex-col justify-between p-[1.81vw] gap-3">
+              <h2 class="font-bold text-[2vw] text-gray-700">David Chen</h2>
+              <p class="font-light text-[1.7vw]">Chief Technology Officer</p>
+            </div>
+          </li>
+          <li class="item opacity-0 translate-y-1/2 transition duration-700 delay-200 rounded-lg shadow-2xl">
+            <img class="rounded-t-lg" src="/src/img/jpg/pexels-emre-keshavarz-3501159.jpg" alt="experts-1">
+            <div class="flex flex-col justify-between p-[1.81vw] gap-3">
+              <h2 class="font-bold text-[2vw] text-gray-700">Alexander Martinez</h2>
+              <p class="font-light text-[1.7vw]">Experienced Cybersecurity Engineer</p>
+            </div>
+          </li>
+          <li class="item opacity-0 translate-y-1/2 transition duration-700 delay-300 rounded-lg shadow-2xl">
+            <img class="rounded-t-lg" src="/src/img/jpg/pexels-gustavo-fring-3875668.jpg" alt="experts-1">
+            <div class="flex flex-col justify-between p-[1.81vw] gap-3">
+              <h2 class="font-bold text-[2vw] text-gray-700">Rachel Lee</h2>
+              <p class="font-light text-[1.7vw]">Senior Data Scientist</p>
+            </div>
+          </li>
+          <li class="item opacity-0 translate-y-1/2 transition duration-700 delay-[400ms] rounded-lg shadow-2xl">
+            <img class="rounded-t-lg" src="/src/img/jpg/pexels-vladimir-kudin-10141145.jpg" alt="experts-1">
+            <div class="flex flex-col justify-between p-[1.81vw] gap-3">
+              <h2 class="font-bold text-[2vw] text-gray-700">Emily Rodriguez</h2>
+              <p class="font-light text-[1.7vw]">Principal Cloud Engineer</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -268,78 +339,95 @@
       <section id="socials" class="page gap-7
       md:gap-24">
         <div class="title">
-          <h5 class="text-center tracking-widest">Contact me</h5>
-          <h1>My Social Media</h1>
+          <h5 class="text-center tracking-widest">Our Social Media</h5>
+          <h1>Contact Us</h1>
         </div>
+
 				<ul>
-            <li class="w-full">
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/ans54bit" class="opacity-0 translate-x-1/2 transition duration-700 item border-l-[#333333] text-[#333333]">
-                <img class="aspect-square w-[40px]
-                min-[1200px]:w-24
-                md:w-10" src="/src/img/png/GitHub_Logo.png" alt="GitHub_Logo">
-                <p class="font-extrabold text-xs
-                min-[1200px]:text-4xl
-                md:text-2xl">GITHUB :</p>
-                <p class="text-jetbrainsmono-xb tracking-widest text-xs
-                min-[1200px]:text-4xl
-                md:text-2xl">ans54bit</p>
-              </a>
-            </li>
-            <li class="w-full">
-              <a target="_blank" rel="noopener noreferrer" href="https://t.me/HabibAnwash" class="opacity-0 translate-x-1/2 transition duration-700 delay-100 item border-l-[#24A1DD] text-[#24A1DD]">
-                <img class="aspect-square w-[40px]
-                min-[1200px]:w-24
-                md:w-10" src="/src/img/png/Telegram_Logo.png" alt="Telegram_Logo">
-                <p class="font-extrabold text-xs
-                min-[1200px]:text-4xl
-                md:text-2xl">TELEGRAM :</p>
-                <p class="text-jetbrainsmono-xb tracking-widest text-xs
-                min-[1200px]:text-4xl
-                md:text-2xl">Habib Anwash</p>
-              </a>
-            </li>
-            <li class="w-full">
-              <a target="_blank" rel="noopener noreferrer" href="https://discordapp.com/users/372738941155147777" class="opacity-0 translate-x-1/2 transition duration-700 delay-200 item border-l-[#5865F2] text-[#5865F2]">
-                <img class="aspect-square w-[40px]
-                min-[1200px]:w-24
-                md:w-10" src="/src/img/png/Discord_Logo.png" alt="Discord_Logo">
-                <p class="font-extrabold text-xs
-                min-[1200px]:text-4xl
-                md:text-2xl">DISCORD :</p>
-                <p class="text-jetbrainsmono-xb tracking-widest text-xs
-                min-[1200px]:text-4xl
-                md:text-2xl">HabibAnwash1447@7305</p>
-              </a>
-            </li>
-            <li class="w-full">
-              <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/ans54bit?igshid=ZDdkNTZiNTM=" class="opacity-0 translate-x-1/2 transition duration-700 delay-300 item border-l-[#CC426A] text-[#CC426A]">
-                <img class="aspect-square w-[40px]
-                min-[1200px]:w-24
-                md:w-10" src="/src/img/png/Instagram_Logo.png" alt="Instagram_Logo">
-                <p class="font-extrabold text-xs
-                min-[1200px]:text-4xl
-                md:text-2xl">INSTAGRAM :</p>
-                <p class="text-jetbrainsmono-xb tracking-widest text-xs
-                min-[1200px]:text-4xl
-                md:text-2xl">@ans54bit</p>
-              </a>
-            </li>
-            <li class="w-full">
-              <a target="_blank" rel="noopener noreferrer" href="https://wa.me/6281217675797" class="opacity-0 translate-x-1/2 transition duration-700 delay-[400ms] item border-l-[#3FE35C] text-[#3FE35C]">
-                <img class="aspect-square w-[40px]
-                min-[1200px]:w-24
-                md:w-10" src="/src/img/png/Whatsapp_Logo.png" alt="Whatsapp_Logo">
-                <p class="font-extrabold text-xs
-                min-[1200px]:text-4xl
-                md:text-2xl">WHATSAPP :</p>
-                <p class="text-jetbrainsmono-xb tracking-widest text-xs
-                min-[1200px]:text-4xl
-                md:text-2xl">+62 812-1767-5797</p>
-              </a>
-            </li>
-      		</ul>
+          <li class="w-full">
+            <a href="#" class="opacity-0 translate-x-1/2 transition duration-700 item border-l-[#E34C41] text-[#E34C41]">
+              <img class="aspect-square w-[40px]
+              min-[1200px]:w-24
+              md:w-10" src="/src/img/png/Gmail_Logo.png" alt="Gmail_Logo">
+              <p class="font-extrabold text-xs
+              min-[1200px]:text-4xl
+              md:text-2xl">GMAIL :</p>
+              <p class="text-jetbrainsmono-xb tracking-widest text-xs
+              min-[1200px]:text-4xl
+              md:text-2xl">azertyacademy@gmail.com</p>
+            </a>
+          </li>
+          <li class="w-full">
+            <a href="#" class="opacity-0 translate-x-1/2 transition duration-700 delay-100 item border-l-[#0073B0] text-[#0073B0]">
+              <img class="aspect-square w-[40px]
+              min-[1200px]:w-24
+              md:w-10" src="/src/img/png/Linkedin_Logo.png" alt="Linkedin_Logo">
+              <p class="font-extrabold text-xs
+              min-[1200px]:text-4xl
+              md:text-2xl">LINKED IN :</p>
+              <p class="text-jetbrainsmono-xb tracking-widest text-xs
+              min-[1200px]:text-4xl
+              md:text-2xl">Azerty Academy</p>
+            </a>
+          </li>
+          <li class="w-full">
+            <a href="#" class="opacity-0 translate-x-1/2 transition duration-700 delay-200 item border-l-[#00AEEF] text-[#00AEEF]">
+              <img class="aspect-square w-[40px]
+              min-[1200px]:w-24
+              md:w-10" src="/src/img/png/Twitter_Logo.png" alt="Twitter_Logo">
+              <p class="font-extrabold text-xs
+              min-[1200px]:text-4xl
+              md:text-2xl">TWITTER :</p>
+              <p class="text-jetbrainsmono-xb tracking-widest text-xs
+              min-[1200px]:text-4xl
+              md:text-2xl">@azerty_academy</p>
+            </a>
+          </li>
+          <li class="w-full">
+            <a href="#" class="opacity-0 translate-x-1/2 transition duration-700 delay-300 item border-l-[#52EB4A] text-[#52EB4A]">
+              <img class="aspect-square w-[40px]
+              min-[1200px]:w-24
+              md:w-10" src="/src/img/png/Telephone_Logo.png" alt="Telephone_Logo">
+              <p class="font-extrabold text-xs
+              min-[1200px]:text-4xl
+              md:text-2xl">TELEPHONE :</p>
+              <p class="text-jetbrainsmono-xb tracking-widest text-xs
+              min-[1200px]:text-4xl
+              md:text-2xl">+62 123 4567 890</p>
+            </a>
+          </li>
+        </ul>
+
+        <div id="join-us" class="flex flex-col items-center gap-7 w-[80%] mt-12">
+          <div class="title">
+            <h5></h5>
+            <h1>Join Us</h1>
+          </div>
+          
+          <form id="from" class="w-[80%] md:w-[780px] mx-auto">
+            <input class="bg-[#0000000d] mb-5 w-full h-11 rounded-xl text-xl px-3 outline-none font-bold placeholder:font-normal
+            md:h-16" id="name" type="text" placeholder="Name">
+            <input class="bg-[#0000000d] mb-5 w-full h-11 rounded-xl text-xl px-3 outline-none font-bold placeholder:font-normal
+            md:h-16" id="city" type="text" placeholder="City">
+            <input class="bg-[#0000000d] mb-5 w-full h-11 rounded-xl text-xl px-3 outline-none font-bold placeholder:font-normal
+            md:h-16" id="email" type="email" placeholder="Email">
+            <input class="bg-[#0000000d] mb-5 w-full h-11 rounded-xl text-xl px-3 outline-none font-bold placeholder:font-normal
+            md:h-16" id="zip-code" type="number" placeholder="Zip Code">
+            <input  id="status" class="bg-[#0000000d] accent-blue-500" type="checkbox">
+            <label  id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+            <button class="mx-auto my-5 block w-32 h-10 bg-[#FF122E]
+            disabled:bg-[#ff122eb4]
+            md:h-14 md:w-52 md:text-2xl" id="submit-form" type="submit">Submit</button>
+            <div id="warning" class="hidden text-center p-4 text-2xl font-bold font-sans bg-red-300 rounded border-l-8 border-l-red-700 text-red-700 shadow-md"></div>
+          </form>
+        </div>
       </section>
     </main>
+
+
+
+
+
     <footer class="bg-[#242A33] flex flex-col items-center py-4 gap-2
     md:h-40 md:py-11 md:gap-3">
       <p class="text-white text-xs tracking-widest
@@ -347,39 +435,50 @@
       <p class="text-jetbrainsmono-xb tracking-widest
       text-white w-52 text-center text-xs
       md:text-xl md:w-full">Build with basic html and tailwind classes</p>
+      <div class="flex gap-6">
+        <p>Powered by</p>
+        <a target="_blank" rel="noopener noreferrer" id="link" href="https://skilvul.com">
+          <img class="h-6" src="https://skilvul.com/static/skilvul-logo-black.svg" alt="Skilvul_Logo">
+        </a>
+      </div>
     </footer>
+    
     <div
     id="background"
     style="
     z-index: -1;
     position: absolute;
     top: 0;
-    height: 3000px;
-    width: 100%;"
+    height: 88vh;
+    width: 100%;
+    background-blend-mode: normal;
+    background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.9) 100%),
+    url('/src/img/jpg/pexels-pixabay-247791.jpg');
+    background-position: center, center;"
     >
-      <div
-      style="
+      <div style="
+      position: absolute;
+      top: 0;
       height: 100%;
       width: 100%;
-      background: rgba(12,5,30,.95);"></div>
-        <img
-        class="origin-top-left -rotate-12 scale-[11] translate-x-1/2 translate-y-1/2 absolute z-[-1] top-[150px] right-[400px]
-        md:top-0 md:right-[800px] md:scale-[17]"
-        src="/src/img/svg/Decoration.svg"
-        alt="Decoration">
+      backdrop-filter: blur(5px);
+      "></div>
     </div>
-    <div id="backdrop" class="hidden absolute overflow-hidden top-0 left-0 w-full h-[100vh] bg-[rgba(0,0,0,.3)]">
-      <nav tabindex="1" id="sidebar" class="absolute transition translate-x-full z-10 right-0 top-0 w-80 border-l-4 border-l-[rgba(47,40,67,.5)] bg-[rgba(12,5,30,.6)] backdrop-blur-lg h-[500vh] backdrop-brightness-50">
-        <ul class="flex flex-col items-stretch p-9 gap-11 text-[rgba(255,255,255,0.5)] font-light">
+
+    <div id="backdrop" class="hidden absolute overflow-hidden top-0 left-0 w-full h-[100vh] bg-[#0000004d]">
+      <div tabindex="1" id="sidebar" class="absolute transition translate-x-full z-10 right-0 top-0 w-80 border-l-4 border-l-[#2f284380] bg-[#0c051e99] backdrop-blur-lg h-[500vh] backdrop-brightness-50">
+        <ul class="flex flex-col items-stretch p-9 gap-11 text-[#ffffff80] font-light">
           <li><a href="#home" class="selected">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Portfolio</a></li>
           <li><a href="#socials">Contact</a></li>
         </ul>
-      </nav>
+      </div>
     </div>
   </body>
+  <script defer src="/src/script/skilvul.js"></script>
   <script defer src="/src/script/headingAnimation.js"></script>
   <script defer src="/src/script/render.js"></script>
   <script defer src="/src/script/navigation.js"></script>

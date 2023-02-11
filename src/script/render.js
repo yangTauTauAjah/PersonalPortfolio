@@ -38,7 +38,7 @@ function executeOnFirstRender(element, onRenderIn, onRenderOut) {
 
 
 const mainHeading = document.querySelector('#main-heading')
-const nameElement = document.querySelector('#name')
+const nameElement = document.querySelector('#fullname')
 const descriptionElement = document.querySelector('#description')
 
 executeOnVisible(mainHeading,
@@ -86,20 +86,43 @@ executeOnVisible(skillsList,
 
 
 
-const projectsList = document.querySelector("#projects ul")
-const projectsItem = document.querySelectorAll("#projects li")
+const testimonialsList = document.querySelector("#testimonials ul")
+const testimonialsItem = document.querySelectorAll("#testimonials li")
 
-executeOnVisible(projectsList,
+executeOnVisible(testimonialsList,
   () => {
-    projectsItem.forEach(e => {
+    testimonialsItem.forEach(e => {
       e.classList.remove('opacity-0')
       e.classList.remove('-translate-x-1/2')
     })
   },
   () => {
-    projectsItem.forEach(e => {
+    testimonialsItem.forEach(e => {
       e.classList.add('opacity-0')
       e.classList.add('-translate-x-1/2')
+    })
+  }
+)
+
+
+
+
+
+
+const expertsList = document.querySelector("#experts ul")
+const expertsItem = document.querySelectorAll("#experts li")
+
+executeOnVisible(expertsList,
+  () => {
+    expertsItem.forEach(e => {
+      e.classList.remove('opacity-0')
+      e.classList.remove('translate-y-1/2')
+    })
+  },
+  () => {
+    expertsItem.forEach(e => {
+      e.classList.add('opacity-0')
+      e.classList.add('translate-y-1/2')
     })
   }
 )
