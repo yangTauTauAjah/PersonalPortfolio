@@ -1,479 +1,738 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Habib Anwash">
-    <meta name="description" content="A simple personal portfolio webpage">
-    <link href="/dist/output.css" rel="stylesheet">
-    <link rel="icon" href="/src/img/svg/Logo.svg">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Habib Anwash" />
+    <meta name="description" content="A simple personal portfolio webpage" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link rel="icon" href="/src/img/svg/Logo.svg" />
     <title>Personal portfolio</title>
   </head>
   <body class="static">
-    <header id="home" class="overflow-x-hidden md:flex flex-col" style="min-height: calc(100vh - 128px)">
+    <header
+      id="home"
+      class="overflow-x-hidden md:flex flex-col"
+      style="min-height: calc(100vh - 128px)"
+    >
       <div
-      class="static flex justify-between items-center h-20 px-6 text-white text-2xl font-extrabold tracking-wider
-      md:h-28 md:px-36"
+        class="static flex justify-between items-center h-20 px-6 text-white text-2xl font-extrabold tracking-wider md:h-28 md:px-36"
       >
         <div class="flex justify-between items-center gap-[20px]">
-          <img style="height:30px" src="/src/img/png/Logo.png" alt="logo">
+          <img style="height: 30px" src="/src/img/png/Logo.png" alt="logo" />
           <h1>AZERTY</h1>
         </div>
-        <button id="sidebar-toggle" class="absolute right-4 rounded-lg border-2 border-white border-opacity-20 w-[45px] h-[35px]
-        md:right-36
-        min-[1200px]:hidden">
-          <img
-          style="
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%)"
-          src="/src/img/svg/LeftArrow.svg"
-          alt="left-arrow"
-          >
-        </button>
-        <nav id="navbar" class="hidden relative flex-row transition z-10 p-0 items-center gap-11 text-[#ffffff85] font-light
-        min-[1200px]:flex">
+        <nav
+          id="navbar"
+          class="hidden relative flex-row transition z-10 p-0 items-center gap-11 text-[#ffffff85] font-light min-[1200px]:flex"
+        >
           <a href="#home" class="selected">Home</a>
           <a href="#about">About</a>
           <a href="#experts">Experts</a>
           <a href="#socials">Contact</a>
         </nav>
-        <button onclick="document.getElementById('join-us').scrollIntoView()" class="text-2xl text-center bg-[#3D4DDD] h-14 w-44 tracking-normal">
+        <button
+          onclick="document.getElementById('join-us').scrollIntoView()"
+          class="hidden text-2xl text-center bg-[#3D4DDD] h-14 w-44 tracking-normal min-[1200px]:block"
+        >
           Get started
+        </button>
+        <button
+          id="sidebar-toggle"
+          class="absolute right-4 rounded-lg border-2 border-white border-opacity-20 w-[45px] h-[35px] md:right-36 min-[1200px]:hidden"
+        >
+          <img
+            style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            "
+            src="/src/img/svg/LeftArrow.svg"
+            alt="left-arrow"
+          />
         </button>
       </div>
       <div class="md:flex items-center flex-grow">
-        <main class="flex flex-col gap-12 items-center w-min mx-auto mt-16 mb-7
-        md:flex-row md:gap-10 md:my-0 md:w-max">
-          <div id="main-heading" class="flex flex-col gap-5 w-80
-          md:w-[50vw] md:gap-0">
+        <main
+          class="flex flex-col gap-12 items-center w-min mx-auto mt-16 mb-7 md:flex-row md:gap-10 md:my-0 md:w-max"
+        >
+          <div
+            id="main-heading"
+            class="flex flex-col gap-5 w-80 md:w-[50vw] md:gap-0"
+          >
             <div>
-              <h5 id="fullname" class="opacity-0 -translate-x-1/4 transition duration-700 text-white text-sm font-semibold tracking-[0.25em]
-              md:leading-[1.5] md:text-2xl">
+              <h5
+                id="fullname"
+                class="opacity-0 -translate-x-1/4 transition duration-700 text-white text-sm font-semibold tracking-[0.25em] md:leading-[1.5] md:text-2xl"
+              >
                 AZERTY <span class="text-[#3D4DDD]">ACADEMY</span>
               </h5>
-              <h1 id="heading" class="text-[#0CFF8A] text-4xl text-jetbrainsmono-xb
-              md:text-5xl  md:leading-[1.5]">A <span id="animate-heading">new </span>way to learn programming</h1>
+              <h1
+                id="heading"
+                class="text-[#0CFF8A] h-32 text-4xl text-jetbrainsmono-xb md:text-5xl md:leading-[1.5] md:h-[initial]"
+              >
+                A <span id="animate-heading">new </span>way to learn programming
+              </h1>
             </div>
-            <p id="description" class="opacity-0 translate-x-1/4 transition duration-700 delay-200 text-[#6A6A6A] text-xs indent-9
-            md:text-[16px] md:leading-[1.5]">
-              AZERTY ACADEMY is the premier online platform for learning programming. With expert instructors and a comprehensive curriculum, we provide the skills and knowledge you need to succeed in tech. Start your journey today and unleash your potential.
+            <p
+              id="description"
+              class="opacity-0 translate-x-1/4 transition duration-700 delay-200 text-[#6A6A6A] text-xs indent-9 md:text-[16px] md:leading-[1.5]"
+            >
+              AZERTY ACADEMY is the premier online platform for learning
+              programming. With expert instructors and a comprehensive
+              curriculum, we provide the skills and knowledge you need to
+              succeed in tech. Start your journey today and unleash your
+              potential.
             </p>
-            <div class="flex flex-col gap-5
-            md:mt-10 md:flex-row md:gap-6 md:text-2xl">
-              <button onclick="document.querySelector('#socials').scrollIntoView()" class="w-32 h-10 bg-[#FF122E]
-              md:w-48 md:h-14">
+            <div
+              class="flex flex-col gap-5 md:mt-10 md:flex-row md:gap-6 md:text-2xl"
+            >
+              <button
+                onclick="document.querySelector('#socials').scrollIntoView()"
+                class="w-32 h-10 bg-[#FF122E] md:w-48 md:h-14"
+              >
                 Contact
               </button>
-              <button onclick="document.querySelector('#testimonials').scrollIntoView()" class="w-44 h-10 bg-transparent outline outline-[#6A6A6A] outline-1
-              md:w-64 md:h-14">
+              <button
+                onclick="document.querySelector('#testimonials').scrollIntoView()"
+                class="w-44 h-10 bg-transparent outline outline-[#6A6A6A] outline-1 md:w-64 md:h-14"
+              >
                 Testimonials
               </button>
             </div>
           </div>
-          <div style="overflow: hidden;">
+          <div style="overflow: hidden">
             <img
-            class="right-[-30px] w-96
-            md:static md:w-[33vw]"
-            src="/src/img/png/Vector.png"
-            alt="decoration">
+              class="right-[-30px] w-96 md:static md:w-[33vw]"
+              src="/src/img/png/Vector.png"
+              alt="decoration"
+            />
           </div>
         </main>
       </div>
     </header>
     <main class="bg-white overflow-x-hidden">
       <!-- Separator -->
-      <div class="py-5
-      md:py-10">
-        <img class="mx-auto
-        md:h-12" src="/src/img/svg/Separator.svg" alt="separator">
+      <div class="py-5 md:py-10">
+        <img
+          class="mx-auto md:h-12"
+          src="/src/img/svg/Separator.svg"
+          alt="separator"
+        />
       </div>
       <!-- Separator -->
 
-
-      <section id="about" class="page gap-7
-      md:flex-row md:justify-between md:mx-40 md:gap-14">
-        <div class="title
-        md:hidden">
+      <section
+        id="about"
+        class="page gap-7 md:flex-row md:justify-between md:mx-40 md:gap-14"
+      >
+        <div class="title md:hidden">
           <h1 class="before:left-3 before:w-16">About Us</h1>
         </div>
         <div class="">
-          <img class="aspect-[424/370] w-28 drop-shadow-[5px_5px_20px_rgba(0,0,0,0.4)]
-          md:w-[424px]" src="/src/img/jpg/pexels-pixabay-269077.jpg" alt="Profile_Photo">
+          <img
+            class="aspect-[424/370] w-64 drop-shadow-[5px_5px_20px_rgba(0,0,0,0.4)] md:min-w-[300px] md:w-[424px]"
+            src="/src/img/jpg/pexels-pixabay-269077.jpg"
+            alt="Building"
+          />
         </div>
-        <div class="flex flex-col gap-8 w-[65%] items-center
-        md:w-[680px] md:items-start">
-          <div class="title hidden
-          md:flex">
-            <h1 class="before:left-3 before:w-16
-            md:before:w-28 md:tracking-widest">About Us</h1>
+        <div
+          class="flex flex-col gap-8 w-[65%] items-center md:w-[680px] md:items-start"
+        >
+          <div class="title hidden md:flex">
+            <h1
+              class="before:left-3 before:w-16 md:before:w-28 md:tracking-widest"
+            >
+              About Us
+            </h1>
           </div>
-          <p class="indent-20 text-justify leading-5
-          md:text-xl">AZERTY ACADEMY platform is a comprehensive online learning platform that offers courses in a variety of programming languages and technologies. The platform is designed for individuals of all skill levels, from beginners looking to start a career in tech to experienced developers looking to expand their knowledge. The courses on the platform are taught by industry experts who provide in-depth, practical instruction on the latest programming concepts and best practices.</p>
-          <button onclick="document.querySelector('#socials').scrollIntoView()" class="w-36 h-10 bg-[#FF122E]
-          md:w-40 md:h-14 md:text-2xl">Join us</button>
+          <p class="indent-10 text-justify leading-5 md:text-xl">
+            AZERTY ACADEMY platform is a comprehensive online learning platform
+            that offers courses in a variety of programming languages and
+            technologies. The platform is designed for individuals of all skill
+            levels, from beginners looking to start a career in tech to
+            experienced developers looking to expand their knowledge. The
+            courses on the platform are taught by industry experts who provide
+            in-depth, practical instruction on the latest programming concepts
+            and best practices.
+          </p>
+          <button
+            onclick="document.querySelector('#socials').scrollIntoView()"
+            class="w-36 h-10 bg-[#FF122E] md:w-40 md:h-14 md:text-2xl"
+          >
+            Join us
+          </button>
         </div>
       </section>
-      
 
       <!-- Separator -->
-      <div class="py-5
-      md:py-10">
-        <img class="mx-auto
-        md:h-12" src="/src/img/svg/Separator.svg" alt="separator">
+      <div class="py-5 md:py-10">
+        <img
+          class="mx-auto md:h-12"
+          src="/src/img/svg/Separator.svg"
+          alt="separator"
+        />
       </div>
       <!-- Separator -->
 
-
-      <section id="skills" id="skills" class="page gap-7
-      md:gap-24 md:mx-[10vw]">
+      <section
+        id="skills"
+        id="skills"
+        class="page gap-7 md:gap-24 md:mx-[10vw]"
+      >
         <div class="title">
           <h5 class="tracking-widest">Skills</h5>
-          <h1 class="before:w-6 before:left-8 after:w-28 after:left-16">Skills you’ll get</h1>
+          <h1 class="before:w-6 before:left-8 after:w-28 after:left-16">
+            Skills you’ll get
+          </h1>
         </div>
-        <ul class="flex flex-wrap w-full justify-center gap-x-4 gap-y-16
-        md:w-auto">
+        <ul
+          class="flex flex-wrap w-full justify-center gap-x-4 gap-y-16 md:w-auto"
+        >
           <li class="opacity-0 -translate-x-1/2 transition duration-700 item">
             <div>
-              <img src="/src/img/png/MongoDB_Logo.png" alt="MongoDB_Logo">
+              <img src="/src/img/png/MongoDB_Logo.png" alt="MongoDB_Logo" />
             </div>
             <div>
               <h3>MongoDB</h3>
-              <p>Cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.</p>
+              <p>
+                Cross-platform document-oriented database program. Classified as
+                a NoSQL database program, MongoDB uses JSON-like documents with
+                optional schemas.
+              </p>
             </div>
           </li>
-          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-100 item">
+          <li
+            class="opacity-0 -translate-x-1/2 transition duration-700 delay-100 item"
+          >
             <div>
-              <img src="/src/img/png/Express_Logo.png" alt="Express_Logo">
+              <img src="/src/img/png/Express_Logo.png" alt="Express_Logo" />
             </div>
             <div>
               <h3>Express JS</h3>
-              <p>Back end web application framework for building RESTful APIs with NodeJS, released as free and open-source software under the MIT License.</p>
+              <p>
+                Back end web application framework for building RESTful APIs
+                with NodeJS, released as free and open-source software under the
+                MIT License.
+              </p>
             </div>
           </li>
-          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-200 item">
+          <li
+            class="opacity-0 -translate-x-1/2 transition duration-700 delay-200 item"
+          >
             <div>
-              <img src="/src/img/png/React_Logo.png" alt="React_Logo">
+              <img src="/src/img/png/React_Logo.png" alt="React_Logo" />
             </div>
             <div>
               <h3>React</h3>
-              <p>JavaScript library for building user interfaces. React has been designed from the start for gradual adoption, and you can use as little or as much React as you need.</p>
+              <p>
+                JavaScript library for building user interfaces. React has been
+                designed from the start for gradual adoption, and you can use as
+                little or as much React as you need.
+              </p>
             </div>
           </li>
-          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-300 item">
+          <li
+            class="opacity-0 -translate-x-1/2 transition duration-700 delay-300 item"
+          >
             <div>
-              <img src="/src/img/png/Node_Logo.png" alt="Node_Logo.png">
+              <img src="/src/img/png/Node_Logo.png" alt="Node_Logo.png" />
             </div>
             <div>
               <h3>Node JS</h3>
-              <p>Back end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser.</p>
+              <p>
+                Back end JavaScript runtime environment, runs on the V8
+                JavaScript Engine, and executes JavaScript code outside a web
+                browser.
+              </p>
             </div>
           </li>
-          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-[400ms] item">
+          <li
+            class="opacity-0 -translate-x-1/2 transition duration-700 delay-[400ms] item"
+          >
             <div>
-              <img src="/src/img/png/HTML_Logo.png" alt="HTML_Logo.png">
-              <img src="/src/img/png/CSS_Logo.png" alt="CSS_Logo.png">
-              <img src="/src/img/png/JS_Logo.png" alt="JS_Logo.png">
+              <img src="/src/img/png/HTML_Logo.png" alt="HTML_Logo.png" />
+              <img src="/src/img/png/CSS_Logo.png" alt="CSS_Logo.png" />
+              <img src="/src/img/png/JS_Logo.png" alt="JS_Logo.png" />
             </div>
             <div>
               <h3>Web Development</h3>
-              <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).</p>
+              <p>
+                Web development is the work involved in developing a website for
+                the Internet (World Wide Web) or an intranet (a private
+                network).
+              </p>
             </div>
           </li>
-          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-500 item">
+          <li
+            class="opacity-0 -translate-x-1/2 transition duration-700 delay-500 item"
+          >
             <div>
-              <img src="/src/img/png/Git_Logo.png" alt="Git_Logo.png">
+              <img src="/src/img/png/Git_Logo.png" alt="Git_Logo.png" />
             </div>
             <div>
               <h3>Git Version Control</h3>
-              <p>Distributed version control system, tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.</p>
+              <p>
+                Distributed version control system, tracking changes in any set
+                of files, usually used for coordinating work among programmers
+                collaboratively developing source code during software
+                development.
+              </p>
             </div>
           </li>
-          <li class="opacity-0 -translate-x-1/2 transition duration-700 delay-[600ms] item">
+          <li
+            class="opacity-0 -translate-x-1/2 transition duration-700 delay-[600ms] item"
+          >
             <div>
-              <img src="/src/img/png/MySQL_Logo.png" alt="MySQL_Logo.png">
+              <img src="/src/img/png/MySQL_Logo.png" alt="MySQL_Logo.png" />
             </div>
             <div>
               <h3>MySQL</h3>
-              <p>MySQL is a widely used relational database management system (RDBMS). MySQL is free and open-source. MySQL is ideal for both small and large applications.</p>
+              <p>
+                MySQL is a widely used relational database management system
+                (RDBMS). MySQL is free and open-source. MySQL is ideal for both
+                small and large applications.
+              </p>
             </div>
           </li>
         </ul>
       </section>
 
-
       <!-- Separator -->
-      <div class="py-5
-      md:py-10">
-        <img class="mx-auto
-        md:h-12" src="/src/img/svg/Separator.svg" alt="separator">
+      <div class="py-5 md:py-10">
+        <img
+          class="mx-auto md:h-12"
+          src="/src/img/svg/Separator.svg"
+          alt="separator"
+        />
       </div>
       <!-- Separator -->
 
-
-      <section id="testimonials" class="page gap-7
-      md:gap-24">
+      <section id="testimonials" class="page gap-7 md:gap-24">
         <div class="title">
           <h5 class="tracking-widest">Testimonials</h5>
-          <h1 class="before:-translate-x-1/2 before:left-1/2 before:w-full
-          before:md:w-80">What people say about us</h1>
+          <h1
+            class="before:-translate-x-1/2 before:left-1/2 before:w-full before:md:w-80"
+          >
+            What people say about us
+          </h1>
         </div>
         <ul>
-          <li class="item opacity-0 -translate-x-1/2 transition duration-700 border-l-[#0CFF8A]">
+          <li
+            class="item opacity-0 -translate-x-1/2 transition duration-700 border-l-[#0CFF8A]"
+          >
             <h3>John Doe</h3>
             <img
-            src="/src/img/jpg/pexels-italo-melo-2379005.jpg"
-            alt="testimonial-1"
-            class="aspect-square h-52 ring-4 ring-offset-2 ring-[#8D7AFF] rounded-full
-            md:gap-14">
+              src="/src/img/jpg/pexels-italo-melo-2379005.jpg"
+              alt="testimonial-1"
+              class="aspect-square max-h-52 rounded-full md:gap-14"
+            />
             <div class="md:flex md:flex-col">
-              <h3 class="hidden
-              md:!block">John Doe</h3>
+              <h3 class="hidden md:!block">Italo Melo</h3>
               <div class="px-5 py-3 border-l-[#8D7AFF]">
-                <p class="text-justify
-                md:text-xl">I have been a self-taught programmer for years but I still found this programming course platform incredibly helpful. The lessons were concise, easy to understand and I appreciated the hands-on projects that allowed me to apply what I learned. I would definitely recommend this platform to anyone looking to improve their programming skills.</p>
+                <p class="text-justify md:text-xl">
+                  I have been a self-taught programmer for years but I still
+                  found this programming course platform incredibly helpful. The
+                  lessons were concise, easy to understand and I appreciated the
+                  hands-on projects that allowed me to apply what I learned. I
+                  would definitely recommend this platform to anyone looking to
+                  improve their programming skills.
+                </p>
               </div>
             </div>
           </li>
-          <li class="item opacity-0 -translate-x-1/2 transition duration-700 delay-100 border-l-[#0C8AFF]">
+          <li
+            class="item opacity-0 -translate-x-1/2 transition duration-700 delay-100 border-l-[#0C8AFF]"
+          >
             <h3>Michael Johnson</h3>
             <img
-            src="/src/img/jpg/pexels-pixabay-220453.jpg"
-            alt="testimonial-2"
-            class="aspect-square h-52 ring-4 ring-offset-2 ring-[#8D7AFF] rounded-full">
+              src="/src/img/jpg/pexels-pixabay-220453.jpg"
+              alt="testimonial-2"
+              class="aspect-square max-h-52 rounded-full"
+            />
             <div class="md:flex md:flex-col">
-              <h3 class="hidden
-              md:!block">Michael Johnson</h3>
+              <h3 class="hidden md:!block">Michael Johnson</h3>
               <div class="px-5 py-3 border-l-[#8D7AFF]">
-                <p class="text-justify
-                md:text-xl">As a beginner, I was intimidated by the thought of learning to program. But the team at this programming course platform made the process so enjoyable. The support from the instructors was fantastic and I felt confident in my abilities after completing the course</p>
+                <p class="text-justify md:text-xl">
+                  As a beginner, I was intimidated by the thought of learning to
+                  program. But the team at this programming course platform made
+                  the process so enjoyable. The support from the instructors was
+                  fantastic and I felt confident in my abilities after
+                  completing the course
+                </p>
               </div>
             </div>
           </li>
-          <li class="item opacity-0 -translate-x-1/2 transition duration-700 delay-200 border-l-[#FF122E]">
+          <li
+            class="item opacity-0 -translate-x-1/2 transition duration-700 delay-200 border-l-[#FF122E]"
+          >
             <h3>David Brown</h3>
             <img
-            src="/src/img/jpg/pexels-nitin-khajotia-1516680.jpg"
-            alt="testimonial-2"
-            class="aspect-square h-52 ring-4 ring-offset-2 ring-[#8D7AFF] rounded-full">
+              src="/src/img/jpg/pexels-nitin-khajotia-1516680.jpg"
+              alt="testimonial-2"
+              class="aspect-square max-h-52 rounded-full"
+            />
             <div class="md:flex md:flex-col">
-              <h3 class="hidden
-              md:!block">David Brown</h3>
+              <h3 class="hidden md:!block">Nitin Khajotia</h3>
               <div class="px-5 py-3 border-l-[#8D7AFF]">
-                <p class="text-justify
-                md:text-xl">The platform's interactive learning environment and personalized feedback system made it easy for me to understand complex programming concepts. I highly recommend this platform to anyone looking to level up their programming skills.</p>
+                <p class="text-justify md:text-xl">
+                  The platform's interactive learning environment and
+                  personalized feedback system made it easy for me to understand
+                  complex programming concepts. I highly recommend this platform
+                  to anyone looking to level up their programming skills.
+                </p>
               </div>
             </div>
           </li>
         </ul>
       </section>
 
-
       <!-- Separator -->
-      <div class="py-5
-      md:py-10">
-        <img class="mx-auto
-        md:h-12" src="/src/img/svg/Separator.svg" alt="separator">
+      <div class="py-5 md:py-10">
+        <img
+          class="mx-auto md:h-12"
+          src="/src/img/svg/Separator.svg"
+          alt="separator"
+        />
       </div>
       <!-- Separator -->
 
-
-      <section id="experts" class="page gap-7 mx-[8.54vw]
-      md:gap-24">
+      <section id="experts" class="page gap-7 mx-[8.54vw] md:gap-24">
         <div class="title">
           <h5 class="tracking-widest">instructors</h5>
-          <h1 class="before:-translate-x-1/2 before:left-1/2 before:w-full
-          before:md:w-80">Our Experts</h1>
+          <h1
+            class="before:-translate-x-1/2 before:left-1/2 before:w-full before:md:w-80"
+          >
+            Our Experts
+          </h1>
         </div>
-        <ul class="pointer-events-none flex flex-wrap gap-x-[3.7vw] gap-y-[7.3vh] justify-start items-stretch">
-          <li class="item opacity-0 translate-y-1/2 transition duration-700 rounded-lg shadow-2xl">
-            <img class="rounded-t-lg" src="/src/img/jpg/pexels-andrea-piacquadio-3785104.jpg" alt="experts-1">
+        <ul
+          class="pointer-events-none flex flex-wrap gap-x-[3.7vw] gap-y-[7.3vh] justify-start items-stretch"
+        >
+          <li
+            class="item opacity-0 translate-y-1/2 transition duration-700 rounded-lg shadow-2xl"
+          >
+            <img
+              class="rounded-t-lg"
+              src="/src/img/jpg/pexels-andrea-piacquadio-3785104.jpg"
+              alt="experts-1"
+            />
             <div class="flex flex-col justify-between p-[1.81vw] gap-3">
               <h2 class="font-bold text-[2vw] text-gray-700">James Mitchell</h2>
               <p class="font-light text-[1.7vw]">Senior Software Engineer</p>
             </div>
           </li>
-          <li class="item opacity-0 translate-y-1/2 transition duration-700 delay-100 rounded-lg shadow-2xl">
-            <img class="rounded-t-lg" src="/src/img/jpg/pexels-andrea-piacquadio-3837279.jpg" alt="experts-1">
+          <li
+            class="item opacity-0 translate-y-1/2 transition duration-700 delay-100 rounded-lg shadow-2xl"
+          >
+            <img
+              class="rounded-t-lg"
+              src="/src/img/jpg/pexels-andrea-piacquadio-3837279.jpg"
+              alt="experts-1"
+            />
             <div class="flex flex-col justify-between p-[1.81vw] gap-3">
               <h2 class="font-bold text-[2vw] text-gray-700">David Chen</h2>
               <p class="font-light text-[1.7vw]">Chief Technology Officer</p>
             </div>
           </li>
-          <li class="item opacity-0 translate-y-1/2 transition duration-700 delay-200 rounded-lg shadow-2xl">
-            <img class="rounded-t-lg" src="/src/img/jpg/pexels-emre-keshavarz-3501159.jpg" alt="experts-1">
+          <li
+            class="item opacity-0 translate-y-1/2 transition duration-700 delay-200 rounded-lg shadow-2xl"
+          >
+            <img
+              class="rounded-t-lg"
+              src="/src/img/jpg/pexels-emre-keshavarz-3501159.jpg"
+              alt="experts-1"
+            />
             <div class="flex flex-col justify-between p-[1.81vw] gap-3">
-              <h2 class="font-bold text-[2vw] text-gray-700">Alexander Martinez</h2>
-              <p class="font-light text-[1.7vw]">Experienced Cybersecurity Engineer</p>
+              <h2 class="font-bold text-[2vw] text-gray-700">
+                Alexander Martinez
+              </h2>
+              <p class="font-light text-[1.7vw]">
+                Experienced Cybersecurity Engineer
+              </p>
             </div>
           </li>
-          <li class="item opacity-0 translate-y-1/2 transition duration-700 delay-300 rounded-lg shadow-2xl">
-            <img class="rounded-t-lg" src="/src/img/jpg/pexels-gustavo-fring-3875668.jpg" alt="experts-1">
+          <li
+            class="item opacity-0 translate-y-1/2 transition duration-700 delay-300 rounded-lg shadow-2xl"
+          >
+            <img
+              class="rounded-t-lg"
+              src="/src/img/jpg/pexels-gustavo-fring-3875668.jpg"
+              alt="experts-1"
+            />
             <div class="flex flex-col justify-between p-[1.81vw] gap-3">
               <h2 class="font-bold text-[2vw] text-gray-700">Rachel Lee</h2>
               <p class="font-light text-[1.7vw]">Senior Data Scientist</p>
             </div>
           </li>
-          <li class="item opacity-0 translate-y-1/2 transition duration-700 delay-[400ms] rounded-lg shadow-2xl">
-            <img class="rounded-t-lg" src="/src/img/jpg/pexels-vladimir-kudin-10141145.jpg" alt="experts-1">
+          <li
+            class="item opacity-0 translate-y-1/2 transition duration-700 delay-[400ms] rounded-lg shadow-2xl"
+          >
+            <img
+              class="rounded-t-lg"
+              src="/src/img/jpg/pexels-vladimir-kudin-10141145.jpg"
+              alt="experts-1"
+            />
             <div class="flex flex-col justify-between p-[1.81vw] gap-3">
-              <h2 class="font-bold text-[2vw] text-gray-700">Emily Rodriguez</h2>
+              <h2 class="font-bold text-[2vw] text-gray-700">
+                Emily Rodriguez
+              </h2>
               <p class="font-light text-[1.7vw]">Principal Cloud Engineer</p>
             </div>
           </li>
         </ul>
       </section>
 
-
       <!-- Separator -->
-      <div class="py-5
-      md:py-10">
-        <img class="mx-auto
-        md:h-12" src="/src/img/svg/Separator.svg" alt="separator">
+      <div class="py-5 md:py-10">
+        <img
+          class="mx-auto md:h-12"
+          src="/src/img/svg/Separator.svg"
+          alt="separator"
+        />
       </div>
       <!-- Separator -->
 
-
-      <section id="socials" class="page gap-7
-      md:gap-24">
+      <section id="socials" class="page gap-7 md:gap-24">
         <div class="title">
           <h5 class="text-center tracking-widest">Our Social Media</h5>
           <h1>Contact Us</h1>
         </div>
 
-				<ul>
+        <ul>
           <li class="w-full">
-            <a href="#" class="opacity-0 translate-x-1/2 transition duration-700 item border-l-[#E34C41] text-[#E34C41]">
-              <img class="aspect-square w-[40px]
-              min-[1200px]:w-24
-              md:w-10" src="/src/img/png/Gmail_Logo.png" alt="Gmail_Logo">
-              <p class="font-extrabold text-xs
-              min-[1200px]:text-4xl
-              md:text-2xl">GMAIL :</p>
-              <p class="text-jetbrainsmono-xb tracking-widest text-xs
-              min-[1200px]:text-4xl
-              md:text-2xl">azertyacademy@gmail.com</p>
+            <a
+              href="#"
+              class="opacity-0 translate-x-1/2 transition duration-700 item border-l-[#E34C41] text-[#E34C41]"
+            >
+              <img
+                class="aspect-square w-[40px] min-[1200px]:w-24 md:w-10"
+                src="/src/img/png/Gmail_Logo.png"
+                alt="Gmail_Logo"
+              />
+              <p
+                class="font-extrabold text-xs min-[1200px]:text-4xl md:text-2xl"
+              >
+                GMAIL :
+              </p>
+              <p
+                class="text-jetbrainsmono-xb tracking-widest text-xs min-[1200px]:text-4xl md:text-2xl"
+              >
+                azertyacademy@gmail.com
+              </p>
             </a>
           </li>
           <li class="w-full">
-            <a href="#" class="opacity-0 translate-x-1/2 transition duration-700 delay-100 item border-l-[#0073B0] text-[#0073B0]">
-              <img class="aspect-square w-[40px]
-              min-[1200px]:w-24
-              md:w-10" src="/src/img/png/Linkedin_Logo.png" alt="Linkedin_Logo">
-              <p class="font-extrabold text-xs
-              min-[1200px]:text-4xl
-              md:text-2xl">LINKED IN :</p>
-              <p class="text-jetbrainsmono-xb tracking-widest text-xs
-              min-[1200px]:text-4xl
-              md:text-2xl">Azerty Academy</p>
+            <a
+              href="#"
+              class="opacity-0 translate-x-1/2 transition duration-700 delay-100 item border-l-[#0073B0] text-[#0073B0]"
+            >
+              <img
+                class="aspect-square w-[40px] min-[1200px]:w-24 md:w-10"
+                src="/src/img/png/Linkedin_Logo.png"
+                alt="Linkedin_Logo"
+              />
+              <p
+                class="font-extrabold text-xs min-[1200px]:text-4xl md:text-2xl"
+              >
+                LINKED IN :
+              </p>
+              <p
+                class="text-jetbrainsmono-xb tracking-widest text-xs min-[1200px]:text-4xl md:text-2xl"
+              >
+                Azerty Academy
+              </p>
             </a>
           </li>
           <li class="w-full">
-            <a href="#" class="opacity-0 translate-x-1/2 transition duration-700 delay-200 item border-l-[#00AEEF] text-[#00AEEF]">
-              <img class="aspect-square w-[40px]
-              min-[1200px]:w-24
-              md:w-10" src="/src/img/png/Twitter_Logo.png" alt="Twitter_Logo">
-              <p class="font-extrabold text-xs
-              min-[1200px]:text-4xl
-              md:text-2xl">TWITTER :</p>
-              <p class="text-jetbrainsmono-xb tracking-widest text-xs
-              min-[1200px]:text-4xl
-              md:text-2xl">@azerty_academy</p>
+            <a
+              href="#"
+              class="opacity-0 translate-x-1/2 transition duration-700 delay-200 item border-l-[#00AEEF] text-[#00AEEF]"
+            >
+              <img
+                class="aspect-square w-[40px] min-[1200px]:w-24 md:w-10"
+                src="/src/img/png/Twitter_Logo.png"
+                alt="Twitter_Logo"
+              />
+              <p
+                class="font-extrabold text-xs min-[1200px]:text-4xl md:text-2xl"
+              >
+                TWITTER :
+              </p>
+              <p
+                class="text-jetbrainsmono-xb tracking-widest text-xs min-[1200px]:text-4xl md:text-2xl"
+              >
+                @azerty_academy
+              </p>
             </a>
           </li>
           <li class="w-full">
-            <a href="#" class="opacity-0 translate-x-1/2 transition duration-700 delay-300 item border-l-[#52EB4A] text-[#52EB4A]">
-              <img class="aspect-square w-[40px]
-              min-[1200px]:w-24
-              md:w-10" src="/src/img/png/Telephone_Logo.png" alt="Telephone_Logo">
-              <p class="font-extrabold text-xs
-              min-[1200px]:text-4xl
-              md:text-2xl">TELEPHONE :</p>
-              <p class="text-jetbrainsmono-xb tracking-widest text-xs
-              min-[1200px]:text-4xl
-              md:text-2xl">+62 123 4567 890</p>
+            <a
+              href="#"
+              class="opacity-0 translate-x-1/2 transition duration-700 delay-300 item border-l-[#52EB4A] text-[#52EB4A]"
+            >
+              <img
+                class="aspect-square w-[40px] min-[1200px]:w-24 md:w-10"
+                src="/src/img/png/Telephone_Logo.png"
+                alt="Telephone_Logo"
+              />
+              <p
+                class="font-extrabold text-xs min-[1200px]:text-4xl md:text-2xl"
+              >
+                TELEPHONE :
+              </p>
+              <p
+                class="text-jetbrainsmono-xb tracking-widest text-xs min-[1200px]:text-4xl md:text-2xl"
+              >
+                +62 123 4567 890
+              </p>
             </a>
           </li>
         </ul>
 
-        <div id="join-us" class="flex flex-col items-center gap-7 w-[80%] mt-12">
+        <div
+          id="join-us"
+          class="flex flex-col items-center gap-7 w-[80%] mt-12 md:w-full md:max-w-[780px]"
+        >
           <div class="title">
             <h5></h5>
             <h1>Join Us</h1>
           </div>
-          
-          <form id="from" class="w-[80%] md:w-[780px] mx-auto">
-            <input class="bg-[#0000000d] mb-5 w-full h-11 rounded-xl text-xl px-3 outline-none font-bold placeholder:font-normal
-            md:h-16" id="name" type="text" placeholder="Name">
-            <input class="bg-[#0000000d] mb-5 w-full h-11 rounded-xl text-xl px-3 outline-none font-bold placeholder:font-normal
-            md:h-16" id="city" type="text" placeholder="City">
-            <input class="bg-[#0000000d] mb-5 w-full h-11 rounded-xl text-xl px-3 outline-none font-bold placeholder:font-normal
-            md:h-16" id="email" type="email" placeholder="Email">
-            <input class="bg-[#0000000d] mb-5 w-full h-11 rounded-xl text-xl px-3 outline-none font-bold placeholder:font-normal
-            md:h-16" id="zip-code" type="number" placeholder="Zip Code">
-            <input  id="status" class="bg-[#0000000d] accent-blue-500" type="checkbox">
-            <label  id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
-            <button class="mx-auto my-5 block w-32 h-10 bg-[#FF122E]
-            disabled:bg-[#ff122eb4]
-            md:h-14 md:w-52 md:text-2xl" id="submit-form" type="submit">Submit</button>
-            <div id="warning" class="hidden text-center p-4 text-2xl font-bold font-sans bg-red-300 rounded border-l-8 border-l-red-700 text-red-700 shadow-md"></div>
+
+          <form id="from" class="w-full mx-auto">
+            <input
+              class="bg-[#0000000d] mb-5 w-full h-11 rounded-xl text-xl px-3 outline-none font-bold placeholder:font-normal md:h-16"
+              id="name"
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              class="bg-[#0000000d] mb-5 w-full h-11 rounded-xl text-xl px-3 outline-none font-bold placeholder:font-normal md:h-16"
+              id="city"
+              type="text"
+              placeholder="City"
+            />
+            <input
+              class="bg-[#0000000d] mb-5 w-full h-11 rounded-xl text-xl px-3 outline-none font-bold placeholder:font-normal md:h-16"
+              id="email"
+              type="email"
+              placeholder="Email"
+            />
+            <input
+              class="bg-[#0000000d] mb-5 w-full h-11 rounded-xl text-xl px-3 outline-none font-bold placeholder:font-normal md:h-16"
+              id="zip-code"
+              type="number"
+              placeholder="Zip Code"
+            />
+            <input
+              id="status"
+              class="bg-[#0000000d] accent-blue-500"
+              type="checkbox"
+            />
+            <label id="check"
+              >Dengan ini saya menyatakan data yang diisi pada form ini adalah
+              benar dan telah sesuai</label
+            >
+            <button
+              class="mx-auto my-5 block w-32 h-10 bg-[#FF122E] disabled:bg-[#ff122eb4] md:h-14 md:w-52 md:text-2xl"
+              id="submit-form"
+              type="submit"
+            >
+              Submit
+            </button>
+            <div
+              id="warning"
+              class="hidden text-center p-4 text-2xl font-bold font-sans bg-red-300 rounded border-l-8 border-l-red-700 text-red-700 shadow-md"
+            ></div>
           </form>
+          <div class="self-start flex gap-6">
+            <p>Powered by</p>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              id="link"
+              href="https://skilvul.com"
+            >
+              <img
+                class="h-6"
+                src="https://skilvul.com/static/skilvul-logo-black.svg"
+                alt="Skilvul_Logo"
+              />
+            </a>
+          </div>
         </div>
       </section>
     </main>
 
-
-
-
-
-    <footer class="bg-[#242A33] flex flex-col items-center py-4 gap-2
-    md:h-40 md:py-11 md:gap-3">
-      <p class="text-white text-xs tracking-widest
-      md:text-2xl">Copyright @ Jan 2023 - <span class="text-yellow-200 font-black ">Habib Anwash</span></p>
-      <p class="text-jetbrainsmono-xb tracking-widest
-      text-white w-52 text-center text-xs
-      md:text-xl md:w-full">Build with basic html and tailwind classes</p>
-      <div class="flex gap-6">
-        <p>Powered by</p>
-        <a target="_blank" rel="noopener noreferrer" id="link" href="https://skilvul.com">
-          <img class="h-6" src="https://skilvul.com/static/skilvul-logo-black.svg" alt="Skilvul_Logo">
-        </a>
-      </div>
-    </footer>
-    
-    <div
-    id="background"
-    style="
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    height: 88vh;
-    width: 100%;
-    background-blend-mode: normal;
-    background:
-    linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.9) 100%),
-    url('/src/img/jpg/pexels-pixabay-247791.jpg');
-    background-position: center, center;"
+    <footer
+      class="bg-[#242A33] flex flex-col items-center py-4 gap-2 md:h-40 md:py-11 md:gap-3"
     >
-      <div style="
-      position: absolute;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      backdrop-filter: blur(5px);
-      "></div>
+      <p class="text-white text-xs tracking-widest md:text-2xl">
+        Copyright @ Jan 2023 -
+        <span class="text-yellow-200 font-black">Habib Anwash</span>
+      </p>
+      <p
+        class="text-jetbrainsmono-xb tracking-widest text-white w-52 text-center text-xs md:text-xl md:w-full"
+      >
+        Build with basic html and tailwind classes
+      </p>
+    </footer>
+
+    <div
+      id="background"
+      style="
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-blend-mode: normal;
+        background: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.2) 0%,
+            rgba(0, 0, 0, 0.9) 100%
+          ),
+          url('/src/img/jpg/pexels-pixabay-247791.jpg');
+        background-position: bottom center, center center;
+      "
+      class="h-[952px] md:h-[88vh]"
+    >
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          height: 100%;
+          width: 100%;
+          backdrop-filter: blur(5px);
+        "
+      ></div>
     </div>
 
-    <div id="backdrop" class="hidden absolute overflow-hidden top-0 left-0 w-full h-[100vh] bg-[#0000004d]">
-      <div tabindex="1" id="sidebar" class="absolute transition translate-x-full z-10 right-0 top-0 w-80 border-l-4 border-l-[#2f284380] bg-[#0c051e99] backdrop-blur-lg h-[500vh] backdrop-brightness-50">
-        <ul class="flex flex-col items-stretch p-9 gap-11 text-[#ffffff80] font-light">
+    <div
+      id="backdrop"
+      class="hidden absolute overflow-hidden top-0 left-0 w-full h-[100vh] bg-[#0000004d]"
+    >
+      <div
+        tabindex="1"
+        id="sidebar"
+        class="absolute transition translate-x-full z-10 right-0 top-0 w-80 border-l-4 border-l-[#2f284380] bg-[#0c051e99] backdrop-blur-lg h-[500vh] backdrop-brightness-50"
+      >
+        <ul
+          class="flex flex-col items-stretch p-9 gap-11 text-[#ffffff80] font-light"
+        >
           <li><a href="#home" class="selected">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Portfolio</a></li>
-          <li><a href="#socials">Contact</a></li>
+          <li><a href="#experts">Experts</a></li>
+          <li><a href="#join-us">Contact</a></li>
+          <li class="p-0 bg-transparent">
+            <button
+              onclick="document.getElementById('join-us').scrollIntoView()"
+              class="text-2xl text-center bg-[#3D4DDD] h-14 w-44 tracking-normal"
+            >
+              Get started
+            </button>
+          </li>
         </ul>
       </div>
     </div>
